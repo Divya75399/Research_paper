@@ -1,13 +1,6 @@
-Problem statement :
-Diabetic Retinopathy (DR) is one of the leading causes of preventable blindness among diabetic patients worldwide. 
-Early detection and accurate severity grading are essential for timely treatment and vision preservation. However, the current diagnosis process relies on manual examination of retinal fundus images by ophthalmologists, which is time-consuming and subjective.
-In addition, different ophthalmologists may provide different severity assessments for the same retinal image, leading to variations in diagnosis. Furthermore, existing automated approaches mainly focus on DR detection rather than detailed severity grading and often lack clinical interpretability. 
-Therefore, there is a need for an automated, accurate, and explainable deep learning-based system that can classify DR severity stages from retinal fundus images and assist clinicians in making reliable diagnostic decisions.
+Problem Statement
 
+Leukemia is a life threatening blood cancer that requires early and accurate diagnosis to improve patient survival. Traditional diagnosis is performed by manually examining peripheral blood smear images under a microscope, which is time consuming, depends on the expertise of hematologists, and may lead to inconsistent results due to human error. In many healthcare centers, especially those with limited resources, the shortage of specialists can delay diagnosis and treatment. Therefore, there is a need for an automated and reliable computer-aided system that can accurately classify blood smear images as leukemia or normal while providing interpretable results to assist medical professionals.
 
 Proposed solution:
-To address the limitations of manual Diabetic Retinopathy (DR) diagnosis, an automated and explainable deep learning-based system is proposed for DR severity grading using retinal fundus images. 
-The proposed framework utilizes a CNN architecture such as DenseNet121 or ResNet to extract important retinal features associated with DR. 
-An attention mechanism is incorporated to focus on clinically significant lesion regions, thereby improving classification performance.
-The system classifies retinal images into five severity stages: No DR, Mild, Moderate, Severe, and Proliferative DR. To enhance clinical trust and interpretability, Grad-CAM is employed to highlight the retinal regions that contribute to the model's prediction. 
-Additionally, the framework provides referral recommendations based on the predicted severity level, supporting timely clinical intervention.
+The proposed system develops an AI-based automated leukemia detection framework using DenseNet121 and Grad-CAM. Blood smear images are first preprocessed by resizing and normalization. The processed images are then classified into Leukemia or Normal using a transfer learning-based DenseNet121 model. To improve the transparency of the predictions, Grad-CAM (Gradient-weighted Class Activation Mapping) generates heatmaps that highlight the image regions influencing the model's decision. A user-friendly Streamlit web application allows users to upload blood smear images, obtain predictions with confidence scores, and visualize the Grad-CAM heatmap. This system aims to support clinicians by providing faster, more consistent, and explainable leukemia diagnosis.
