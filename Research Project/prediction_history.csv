@@ -1,0 +1,2 @@
+Patient Name,Uploaded Image,Blood Smear Image,Prediction Result,Prediction Confidence Score,Date of Diagnosis,Timestamp,Additional Details
+UID_2_21_2_all.bmp,UID_2_21_2_all.bmp,E:\Research Project - Leukemia\prediction_images\UID_2_21_2_all_20260721_085945.bmp,Leukemia,83.63,2026-07-21,2026-07-21 08:59:45,Auto-saved prediction record.
